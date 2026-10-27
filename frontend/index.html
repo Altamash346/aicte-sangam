@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AICTE Sangam — Integrated Institution Complaint Monitoring System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css?v=3">
+</head>
+<body>
+  <div class="tricolor-strip"></div>
+  <div id="app"></div>
+  <div id="pal" class="pal" hidden>
+    <div class="palbox">
+      <div class="pal-header">
+        <span style="display:inline-flex;align-items:center;gap:8px"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> AICTE Command Palette</span>
+        <kbd>ESC to close</kbd>
+      </div>
+      <input placeholder="Search cases, institutions, bureaus, pages..." aria-label="Command palette">
+      <div class="pallist"></div>
+    </div>
+  </div>
+  <div id="toast"></div>
+  <script src="/app.js?v=3"></script>
+</body>
+</html>

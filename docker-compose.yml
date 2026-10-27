@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      SECRET_KEY: change-me-to-a-long-random-string-0123456789
+      COOKIE_SECURE: "false"   # set true behind HTTPS
+    volumes: ["./backend/data:/srv/backend/data"]

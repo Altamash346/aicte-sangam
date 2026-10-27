@@ -1,0 +1,532 @@
+{
+ "planted_overlaps": [
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00001",
+    "AICTE/RB/2026/00002"
+   ],
+   "institution": "1-442242560",
+   "category": "fee_refund"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00003",
+    "AICTE/RB/2026/00004"
+   ],
+   "institution": "1-805885538",
+   "category": "salary_delay"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00005",
+    "AICTE/RB/2026/00006"
+   ],
+   "institution": "1-903623252",
+   "category": "unapproved_intake"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00007",
+    "AICTE/RB/2026/00008"
+   ],
+   "institution": "1-519757962",
+   "category": "infrastructure"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00009",
+    "AICTE/RB/2026/00010"
+   ],
+   "institution": "1-555204951",
+   "category": "faculty_norms"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00011",
+    "AICTE/RB/2026/00012"
+   ],
+   "institution": "1-991690878",
+   "category": "certificates"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00013",
+    "AICTE/RB/2026/00014"
+   ],
+   "institution": "1-644615424",
+   "category": "fee_refund"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00015",
+    "AICTE/RB/2026/00016"
+   ],
+   "institution": "1-588714229",
+   "category": "salary_delay"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00017",
+    "AICTE/RB/2026/00018"
+   ],
+   "institution": "1-134587876",
+   "category": "unapproved_intake"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00019",
+    "AICTE/RB/2026/00020"
+   ],
+   "institution": "1-992193682",
+   "category": "infrastructure"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00021",
+    "AICTE/RB/2026/00022"
+   ],
+   "institution": "1-695979799",
+   "category": "faculty_norms"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00023",
+    "AICTE/RB/2026/00024"
+   ],
+   "institution": "1-701499541",
+   "category": "certificates"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00025",
+    "AICTE/RB/2026/00026"
+   ],
+   "institution": "1-883002502",
+   "category": "fee_refund"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00027",
+    "AICTE/RB/2026/00028"
+   ],
+   "institution": "1-672318001",
+   "category": "salary_delay"
+  }
+ ],
+ "planted_conflicts": [
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00001",
+    "AICTE/RB/2026/00002"
+   ],
+   "type": "approval_withdrawn_vs_compliant"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00003",
+    "AICTE/RB/2026/00004"
+   ],
+   "type": "approval_withdrawn_vs_compliant"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00005",
+    "AICTE/RB/2026/00006"
+   ],
+   "type": "approval_withdrawn_vs_compliant"
+  },
+  {
+   "cases": [
+    "AICTE/PGRC/2026/00007",
+    "AICTE/RB/2026/00008"
+   ],
+   "type": "approval_withdrawn_vs_compliant"
+  }
+ ],
+ "messy_refs": [
+  {
+   "case_no": "AICTE/PGRC/2026/00001",
+   "ref": "Malabar School of Mgmt",
+   "true_institution": "1-442242560",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00007",
+   "ref": "Sundarbna College of Engineering",
+   "true_institution": "1-519757962",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00013",
+   "ref": "Deccan School of Mgmt",
+   "true_institution": "1-644615424",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00019",
+   "ref": "Aravali Instt. o fTech",
+   "true_institution": "1-992193682",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00025",
+   "ref": "Ganag Clg of Engg",
+   "true_institution": "1-883002502",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00032",
+   "ref": "Vindhya Instt. of Engg and Tech",
+   "true_institution": "1-443919795",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00033",
+   "ref": "Ganga Instt. of Engg and Tceh",
+   "true_institution": "1-213207381",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/RB/2026/00038",
+   "ref": "VCE, Raipur",
+   "true_institution": "1-805885538",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00042",
+   "ref": "Kaveri Poltyechnic",
+   "true_institution": "1-930223530",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00044",
+   "ref": "NIET, Guwahati",
+   "true_institution": "1-745132818",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00048",
+   "ref": "Narmada Institute of Engineerign and Technology",
+   "true_institution": "1-675055236",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00050",
+   "ref": "Hiamlaya Instt. of Tech",
+   "true_institution": "1-166261694",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RO/2026/00052",
+   "ref": "Nilgiri Instt. of nEgg and Tech",
+   "true_institution": "1-745132818",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/ARC/2026/00058",
+   "ref": "Thar Instt. of Tech",
+   "true_institution": "1-672318001",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00059",
+   "ref": "Sahyadri Institute of Phramacy",
+   "true_institution": "1-795954485",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00068",
+   "ref": "Aravali nIstt. of Pharmacy",
+   "true_institution": "1-158075117",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00069",
+   "ref": "Sarawsati Instt. of Engg and Tech",
+   "true_institution": "1-881715139",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/RB/2026/00071",
+   "ref": "Sunadrban Instt. of Pharmacy",
+   "true_institution": "1-555204951",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RO/2026/00073",
+   "ref": "Kaveri Inst.t of Engg and Tech",
+   "true_institution": "1-876796800",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/RB/2026/00074",
+   "ref": "GP, Shillong",
+   "true_institution": "1-380209915",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/AB/2026/00078",
+   "ref": "Aravali Instt. of Tech",
+   "true_institution": "1-992193682",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00085",
+   "ref": "Kaver iPolytechnic",
+   "true_institution": "1-930223530",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RO/2026/00093",
+   "ref": "Deccan Schoolo f Mgmt",
+   "true_institution": "1-644615424",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00095",
+   "ref": "Deccan Instt. of Engg and Tech",
+   "true_institution": "1-731040400",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00097",
+   "ref": "Sundarban Instt. of Tech",
+   "true_institution": "1-770161835",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00101",
+   "ref": "Thar Instt. o fPharmacy",
+   "true_institution": "1-115544692",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00104",
+   "ref": "Ganga College o fEngineering",
+   "true_institution": "1-883002502",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/RB/2026/00105",
+   "ref": "SIT, Kolkata",
+   "true_institution": "1-130670697",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00111",
+   "ref": "Konkan Instt. of Engg and Tech",
+   "true_institution": "1-945716246",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/ARC/2026/00121",
+   "ref": "Konkan Institute of Engnieering and Technology",
+   "true_institution": "1-945716246",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00124",
+   "ref": "NSM, Indore",
+   "true_institution": "1-953069957",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00130",
+   "ref": "Brahmaputra Ploytechnic",
+   "true_institution": "1-588714229",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/AB/2026/00131",
+   "ref": "Vivekananda Instiutte of Pharmacy",
+   "true_institution": "1-701499541",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/RB/2026/00134",
+   "ref": "Konakn Instt. of Tech",
+   "true_institution": "1-469276812",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00142",
+   "ref": "Aravali Instituet of Technology",
+   "true_institution": "1-992193682",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00144",
+   "ref": "Coormandel Polytechnic",
+   "true_institution": "1-991690878",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/RB/2026/00145",
+   "ref": "Thar Instt. of Engg and Tech",
+   "true_institution": "1-101968366",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/RB/2026/00150",
+   "ref": "HP, Bengaluru",
+   "true_institution": "1-349468484",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00151",
+   "ref": "Tha rInstt. of Pharmacy",
+   "true_institution": "1-115544692",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00152",
+   "ref": "VindhyaI nstitute of Engineering and Technology",
+   "true_institution": "1-443919795",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/ARC/2026/00153",
+   "ref": "Konkan Instt. of Pharmacy",
+   "true_institution": "1-481672723",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00164",
+   "ref": "Narmada School of Mgmt",
+   "true_institution": "1-695979799",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00173",
+   "ref": "Nilgrii Clg of Engg",
+   "true_institution": "1-134587876",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00174",
+   "ref": "Sahaydri Institute of Technology",
+   "true_institution": "1-130670697",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RO/2026/00176",
+   "ref": "Brahmaputra Instt. of Engg and Tech",
+   "true_institution": "1-737604487",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/RO/2026/00180",
+   "ref": "NIET, Kolkata",
+   "true_institution": "1-675055236",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00181",
+   "ref": "AIP, Indore",
+   "true_institution": "1-158075117",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/RB/2026/00182",
+   "ref": "TP, Kochi",
+   "true_institution": "1-933028782",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00183",
+   "ref": "Deccan Cl gof Engg",
+   "true_institution": "1-217458623",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00187",
+   "ref": "Kaveri Shcool of Management",
+   "true_institution": "1-515269179",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00188",
+   "ref": "KCE, Ahmedabad",
+   "true_institution": "1-930638356",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00190",
+   "ref": "Ganga Polytechinc",
+   "true_institution": "1-380209915",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00191",
+   "ref": "Nilgiri Institute ofP harmacy",
+   "true_institution": "1-819498918",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00192",
+   "ref": "Godavari Ploytechnic",
+   "true_institution": "1-267846686",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00193",
+   "ref": "Deccan School of Mgmt",
+   "true_institution": "1-644615424",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/RB/2026/00195",
+   "ref": "Konkan Polytechnic",
+   "true_institution": "1-225100666",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/RB/2026/00198",
+   "ref": "Konkna Polytechnic",
+   "true_institution": "1-225100666",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/RB/2026/00201",
+   "ref": "CoromandelP olytechnic",
+   "true_institution": "1-991690878",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00202",
+   "ref": "Himalaya Institute of Engineering andT echnology",
+   "true_institution": "1-775634113",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00205",
+   "ref": "Vivekannada Instt. of Pharmacy",
+   "true_institution": "1-701499541",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00206",
+   "ref": "Sahyadri Instt. of Tech",
+   "true_institution": "1-130670697",
+   "resolved_in_db": false
+  },
+  {
+   "case_no": "AICTE/PGRC/2026/00209",
+   "ref": "GCE, Bhubaneswar",
+   "true_institution": "1-883002502",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/AB/2026/00213",
+   "ref": "Saraswati Institute of Technoolgy",
+   "true_institution": "1-216540827",
+   "resolved_in_db": true
+  },
+  {
+   "case_no": "AICTE/RB/2026/00214",
+   "ref": "Brahmaputra Institute of Engineeirng and Technology",
+   "true_institution": "1-737604487",
+   "resolved_in_db": false
+  }
+ ]
+}
