@@ -1,4 +1,4 @@
-# AICTE Sangam - Integrated Institution Complaint Monitoring Dashboard
+# AICTE Samvad - Integrated Institution Complaint Monitoring Dashboard
 **SIH PS 26264 · AICTE · Regulation Bureau · Smart Automation**
 
 One screen showing every institution-related complaint across RB, PGRC, Approval Bureau, Anti-Ragging Cell and Regional Offices -

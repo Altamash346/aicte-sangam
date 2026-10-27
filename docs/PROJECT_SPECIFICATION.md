@@ -1,4 +1,4 @@
-# AICTE Sangam — Master Project Blueprint & Specification
+# AICTE Samvad — Master Project Blueprint & Specification
 **SIH Problem Statement ID 26264 · AICTE · Regulation Bureau · Smart Automation**
 
 ---
@@ -32,8 +32,8 @@ Without a centralized, real-time mechanism:
 3. **Contradictory Regulatory Orders:** One Bureau may close a grievance finding compliance, while another Bureau cancels approval or issues a penalty notice.
 4. **SLA Breaches & Inactivity:** Cases languish without cross-departmental accountability.
 
-### 1.3 The Solution: AICTE Sangam
-**AICTE Sangam** is an intelligent, single-window complaint monitoring dashboard that establishes a single source of truth across all AICTE bodies. It continuously correlates complaints, resolves messy institutional references, calculates cross-bureau overlap risk, raises warnings *before* conflicting orders are issued, and provides end-to-end lifecycle tracking with a tamper-evident audit trail.
+### 1.3 The Solution: AICTE Samvad
+**AICTE Samvad** is an intelligent, single-window complaint monitoring dashboard that establishes a single source of truth across all AICTE bodies. It continuously correlates complaints, resolves messy institutional references, calculates cross-bureau overlap risk, raises warnings *before* conflicting orders are issued, and provides end-to-end lifecycle tracking with a tamper-evident audit trail.
 
 ---
 
@@ -394,7 +394,7 @@ To transition this hackathon-winning prototype into an institutional-grade natio
 
 ```mermaid
 timeline
-    title AICTE Sangam Production Roadmap
+    title AICTE Samvad Production Roadmap
     Phase 1 (Completed) : Core FastAPI + SPA Architecture : Deterministic Fuzzy Matcher : Trilingual Concept Lexicon : Overlap & Conflict Engine : RBAC & Tamper Audit Log
     Phase 2 (Immediate) : Multipart Document Uploads : Bulk CSV / Excel Ingestion : Public Citizen Tracking View
     Phase 3 (Enterprise) : Email & SMS Gateway Workers : Automated Timed Escalation Daemon : Multilingual Transformer Embeddings (IndicBERT)

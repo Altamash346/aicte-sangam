@@ -22,7 +22,7 @@ async def lifespan(app):
     yield
 
 
-app = FastAPI(title="AICTE Sangam API", version="0.1.0", lifespan=lifespan)
+app = FastAPI(title="AICTE Samvad API", version="0.1.0", lifespan=lifespan)
 app.add_middleware(CORSMiddleware, allow_origins=config.CORS_ORIGINS, allow_credentials=True,
                    allow_methods=["GET", "POST"], allow_headers=["Content-Type"])
 

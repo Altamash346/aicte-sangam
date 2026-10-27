@@ -81,7 +81,7 @@ function shell(inner) {
   const href = k => ({ dashboard: "dashboard", cases: "cases", overlaps: "overlaps", institutions: "institutions", register: "new", import: "import", alerts: "alerts", reports: "reports", evaluation: "eval", audit: "audit", track: "track" }[k]);
   return `<div class="shell"><aside>
     <div class="brand">
-      <div class="brand-title"><span class="brand-logo">${icon("govSeal", 20)}</span> AICTE Sangam <span class="badge">PRO</span></div>
+      <div class="brand-title"><span class="brand-logo">${icon("govSeal", 20)}</span> AICTE Samvad <span class="badge">PRO</span></div>
       <small>Integrated Grievance Cockpit</small>
     </div>
     <nav>${nav.map(([k]) =>
@@ -496,7 +496,7 @@ async function renderPublicTrack(caseNoParam) {
     <div style="min-height:100vh;background:var(--bg);background-image:var(--bg-mesh);padding:32px 16px">
       <div style="max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
         <div class="brand" style="border:none;padding:0;margin:0">
-          <div class="brand-title"><span class="brand-logo">${icon("govSeal", 22)}</span> AICTE Sangam <span class="badge">CITIZEN PORTAL</span></div>
+          <div class="brand-title"><span class="brand-logo">${icon("govSeal", 22)}</span> AICTE Samvad <span class="badge">CITIZEN PORTAL</span></div>
           <small>National Institution Grievance Status Service</small>
         </div>
         <a href="#/dashboard" class="btn sm alt" style="text-decoration:none">${icon("lock", 13)} Staff Sign In &rarr;</a>
@@ -612,7 +612,7 @@ function loginView() {
           <div style="display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:0.08em;color:var(--mut);text-transform:uppercase;margin-bottom:6px">
             <span class="brand-logo" style="width:18px;height:18px">${icon("govSeal", 16)}</span> Government of India · AICTE
           </div>
-          <h1 style="justify-content:center;margin:0 0 4px;font-size:26px">AICTE Sangam</h1>
+          <h1 style="justify-content:center;margin:0 0 4px;font-size:26px">AICTE Samvad</h1>
           <p class="mut" style="margin:0;font-size:12.5px;font-weight:600">Integrated Institution Complaint Monitoring Cockpit</p>
         </div>
 
