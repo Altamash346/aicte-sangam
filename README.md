@@ -11,7 +11,6 @@ cd backend
 pip install -r requirements.txt
 python -m uvicorn app.main:app --reload      # open http://127.0.0.1:8000   (API docs: /docs)
 python -m pytest -q                          # 19 tests
-python -m app.engine.evaluate                # engine accuracy vs planted ground truth (backend/docs/evaluation.md)
 ```
 Windows tip: use `python -m uvicorn` / `python -m pytest` if the commands are not on PATH. Delete `backend/aicte.db` to reseed.
 Docker (untested here): `docker compose up --build`. PostgreSQL: set `DATABASE_URL=postgresql+psycopg://...` and `pip install "psycopg[binary]"`.
@@ -38,7 +37,7 @@ Click **▶ Guided demo** in the top bar for an 8-step walkthrough. Pitch script
 
 ## Architecture
 FastAPI + SQLAlchemy (SQLite default, PostgreSQL-ready) · no-build web app served by the backend (`frontend/`) · deterministic, explainable engine (`backend/app/engine/`).
-`matching.py` institution resolution · `concepts.py` cross-lingual subject extraction · `overlap.py` two-tier overlap score · `conflicts.py` contradictory-action rules · `evaluate.py` measured accuracy.
+`matching.py` institution resolution · `concepts.py` cross-lingual subject extraction · `overlap.py` two-tier overlap score · `conflicts.py` contradictory-action rules.
 
 ## Security & governance
 Argon2 password hashing · httpOnly SameSite session cookie · login throttling · **server-side** role and region scoping (client never decides) ·
@@ -46,7 +45,7 @@ sealed sensitive cases (need-to-know, every view logged) · complainant contact 
 security headers · input validation · all rendered text HTML-escaped. The engine only advises: **humans decide, nothing is auto-merged**.
 
 ## Honest limits
-- Synthetic data; engine metrics (backend/docs/evaluation.md) detect regressions, they are **not** real-world accuracy.
+- Synthetic data for demo and validation purposes.
 - Hindi/Hinglish understanding is a lexicon for 7 complaint themes; real deployment needs a larger lexicon or an embedding model (plug-in point `engine/concepts.py`).
 - SLA days are illustrative and configurable (`domain.py`). Impact figures are estimates with a stated, adjustable assumption.
 - No live integration with AICTE systems yet (production path: ingest API / CSV import, SSO, PostgreSQL, HTTPS, background alert jobs/e-mail/SMS).

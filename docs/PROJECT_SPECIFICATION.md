@@ -146,7 +146,6 @@ The system defines 4 primary administrative tiers across 5 Bureau scopes:
 | **Reopen Disposed Case** | Yes | Yes | No | No |
 | **Review Overlaps & Designate Lead** | Yes | Yes | Yes | No (Read-Only) |
 | **Verify Audit Chain & Security Logs** | **Yes (Exclusive)** | No | No | No |
-| **View Benchmark & Evaluation Engine** | Yes | Yes | No | No |
 
 ---
 
@@ -384,7 +383,6 @@ Scans action histories of related cases at the same institution handled by diffe
 * `GET /api/impact` — Dynamic metric calculating cross-bureau pairs caught and estimated officer-hours saved.
 * `GET /api/audit` — Append-only audit trail (Admin only).
 * `GET /api/audit/verify` — Validates cryptographic SHA-256 hash integrity across the entire database history.
-* `GET /api/evaluation` — Regression evaluation of matching engine against ground-truth benchmark.
 
 ---
 

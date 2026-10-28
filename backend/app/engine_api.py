@@ -108,9 +108,3 @@ def review(body: ReviewIn, db: Session = Depends(get_db), user: User = Depends(r
                               remarks=f"Linked with {(b if c is a else a).case_no}. Lead: {body.lead_bureau}. {body.note}"))
     audit(db, user.username, "OVERLAP_" + body.decision.upper(), "overlap", key, body.note[:100]); db.commit()
     return {"pair_key": key, "status": status, "lead_bureau": body.lead_bureau}
-
-
-@router.get("/evaluation")
-def evaluation(db: Session = Depends(get_db), user: User = Depends(require_roles("ADMIN", "HEAD"))):
-    from .engine.evaluate import run
-    return run(db)

@@ -3,11 +3,11 @@ const $ = (s, e = document) => e.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const S = { me: null, meta: null, lang: localStorage.lang || "en", theme: localStorage.theme || "light" };
 const T = {
-  en: { dashboard: "Dashboard", cases: "Cases", overlaps: "Overlap Centre", institutions: "Institutions", register: "Register Complaint", import: "Bulk Ingestion", evaluation: "Engine Evaluation", audit: "Audit Trail",
+  en: { dashboard: "Dashboard", cases: "Cases", overlaps: "Overlap Centre", institutions: "Institutions", register: "Register Complaint", import: "Bulk Ingestion", audit: "Audit Trail",
     search: "Search", total: "Total received", Pending: "Pending", "Under Process": "Under process", Transferred: "Transferred", Escalated: "Escalated", Disposed: "Disposed",
     overdue: "Beyond timeline", due7: "Due in 7 days", banner: "Potential Overlapping Cases - Coordination Required", workload: "Bureau/Cell workload (active)", ageing: "Pending case ageing (days)",
     inflow: "Monthly inflow", topinst: "Institutions with most active cases", logout: "Sign out", alerts: "Alerts", reports: "Reports", impact: "Impact estimate", demo: "Guided demo", signin: "Sign in", acknowledge: "Acknowledge", notrel: "Not related", lead: "Make lead", conflicts: "Conflicting actions", track: "Track Grievance" },
-  hi: { dashboard: "डैशबोर्ड", cases: "शिकायतें", overlaps: "ओवरलैप केंद्र", institutions: "संस्थान", register: "शिकायत दर्ज करें", import: "थोक प्रविष्टि", evaluation: "इंजन मूल्यांकन", audit: "ऑडिट ट्रेल",
+  hi: { dashboard: "डैशबोर्ड", cases: "शिकायतें", overlaps: "ओवरलैप केंद्र", institutions: "संस्थान", register: "शिकायत दर्ज करें", import: "थोक प्रविष्टि", audit: "ऑडिट ट्रेल",
     search: "खोजें", total: "कुल प्राप्त", Pending: "लंबित", "Under Process": "प्रक्रियाधीन", Transferred: "स्थानांतरित", Escalated: "उच्चस्तर पर भेजी गई", Disposed: "निस्तारित",
     overdue: "समय-सीमा पार", due7: "7 दिन में देय", banner: "संभावित ओवरलैपिंग मामले - समन्वय आवश्यक", workload: "ब्यूरो/सेल कार्यभार (सक्रिय)", ageing: "लंबित मामलों की आयु (दिन)",
     inflow: "मासिक प्राप्ति", topinst: "सर्वाधिक सक्रिय मामलों वाले संस्थान", logout: "साइन आउट", alerts: "अलर्ट", reports: "रिपोर्ट", impact: "प्रभाव अनुमान", demo: "गाइडेड डेमो", signin: "साइन इन", acknowledge: "देखा", notrel: "संबंधित नहीं", lead: "प्रमुख बनाएं", conflicts: "परस्पर विरोधी कार्रवाइयाँ", track: "शिकायत ट्रैक करें" },
@@ -36,7 +36,6 @@ const ICONS = {
   alerts: '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>',
   bell: '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>',
   reports: '<line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>',
-  evaluation: '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>',
   audit: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/>',
   search: '<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>',
   globe: '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
@@ -76,9 +75,9 @@ const NAV = [["dashboard", ""], ["cases", ""], ["overlaps", ""], ["institutions"
 const route = () => { const h = location.hash.slice(1) || "/dashboard"; const [p, q] = h.split("?"); return { parts: p.split("/").filter(Boolean), q: Object.fromEntries(new URLSearchParams(q || "")) }; };
 
 function shell(inner) {
-  const adm = S.me.role === "ADMIN", head = adm || S.me.role === "HEAD", cur = route().parts[0];
-  const nav = NAV.concat(head ? [["evaluation", ""]] : [], adm ? [["audit", ""]] : []);
-  const href = k => ({ dashboard: "dashboard", cases: "cases", overlaps: "overlaps", institutions: "institutions", register: "new", import: "import", alerts: "alerts", reports: "reports", evaluation: "eval", audit: "audit", track: "track" }[k]);
+  const adm = S.me.role === "ADMIN", cur = route().parts[0];
+  const nav = NAV.concat(adm ? [["audit", ""]] : []);
+  const href = k => ({ dashboard: "dashboard", cases: "cases", overlaps: "overlaps", institutions: "institutions", register: "new", import: "import", alerts: "alerts", reports: "reports", audit: "audit", track: "track" }[k]);
   return `<div class="shell"><aside>
     <div class="brand">
       <div class="brand-title"><span class="brand-logo">${icon("govSeal", 20)}</span> AICTE Samvad <span class="badge">PRO</span></div>
@@ -122,7 +121,7 @@ async function render() {
   }
   $("#app").innerHTML = shell(); bindShell(); const v = $("#view");
   try {
-    const fn = { dashboard: vDash, cases: vCases, case: vCase, overlaps: vOverlaps, institutions: vInsts, institution: vInst, new: vNew, import: vImport, track: vTrack, eval: vEval, audit: vAudit, alerts: vAlerts, reports: vReports }[p[0] || "dashboard"] || vDash;
+    const fn = { dashboard: vDash, cases: vCases, case: vCase, overlaps: vOverlaps, institutions: vInsts, institution: vInst, new: vNew, import: vImport, track: vTrack, audit: vAudit, alerts: vAlerts, reports: vReports }[p[0] || "dashboard"] || vDash;
     v.innerHTML = '<p class="mut">Loading...</p>'; v.innerHTML = await fn(p[1], r.q); (fn.after || (() => { }))(p[1], r.q);
   } catch (e) { v.innerHTML = `<div class="card">[Alert] ${esc(e.message)}</div>`; }
 }
@@ -507,14 +506,7 @@ async function renderPublicTrack(caseNoParam) {
   (vTrack.after || (() => {}))();
 }
 
-/* ---------- evaluation + audit ---------- */
-async function vEval() {
-  const r = await api("/evaluation"), m = r.institution_matcher;
-  return `<h1>${esc(t("evaluation"))}</h1><div class="banner amb">${esc(r.warning)} Used for regression-checking and tuning, not as real-world accuracy.</div><div class="grid g2">
-  <div class="card"><h2>Institution matcher (${m.total} messy references)</h2><p>Auto-linked <b>${Math.round(m.auto_link_rate * 100)}%</b> · wrong auto-links <b>${m.auto_wrong}</b><br>To officer review: ${m.review} (truth in top-3: ${m.review_contains_truth}) · unresolved: ${m.unresolved}</p></div>
-  <div class="card"><h2>Conflicting actions</h2><p>Planted ${r.conflicts.planted} · found <b>${r.conflicts.found_planted}</b> · other flags ${r.conflicts.other_flags}</p><h2>Recall by language</h2>${Object.entries(r.planted_overlap_recall_by_language).map(([k, v]) => `<p style="margin:2px 0">${esc(k)}: ${v.found}/${v.total}</p>`).join("")}</div></div>
-  <div class="card tw"><h2>Overlap detection - threshold sweep</h2><table><thead><tr><th>Threshold</th><th>Precision</th><th>Recall</th><th>F1</th><th>TP</th><th>FP</th></tr></thead><tbody>${r.overlap_threshold_sweep.map(x => `<tr><td>${x.threshold}${x.threshold === r.operating_threshold ? " (operating)" : ""}</td><td>${x.precision}</td><td>${x.recall}</td><td>${x.f1}</td><td>${x.tp}</td><td>${x.fp}</td></tr>`).join("")}</tbody></table><p class="mut">${esc(r.note)}</p></div>`;
-}
+/* ---------- audit ---------- */
 async function vAudit() {
   const [rows, v] = await Promise.all([api("/audit?limit=60"), api("/audit/verify")]);
   return `<h1>${esc(t("audit"))}</h1><div class="banner ${v.valid ? "amb" : ""}">${v.valid ? `<span style="color:var(--grn);display:inline-flex;align-items:center;gap:6px;font-weight:700">${icon("shieldCheck", 17)} Hash chain intact</span>` : `<span style="color:var(--red);display:inline-flex;align-items:center;gap:6px;font-weight:700">${icon("shieldAlert", 17)} TAMPERING DETECTED at entry ` + v.broken_at + `</span>`} - ${v.entries} entries verified</div><div class="card tw"><table><thead><tr><th>#</th><th>Time</th><th>Actor</th><th>Action</th><th>Entity</th><th>Detail</th><th>Hash</th></tr></thead><tbody>
