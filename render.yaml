@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: aicte-samvad
+    runtime: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: PYTHON_VERSION
+        value: "3.12.0"

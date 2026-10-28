@@ -13,7 +13,30 @@ python -m uvicorn app.main:app --reload      # open http://127.0.0.1:8000   (API
 python -m pytest -q                          # 19 tests
 ```
 Windows tip: use `python -m uvicorn` / `python -m pytest` if the commands are not on PATH. Delete `backend/aicte.db` to reseed.
-Docker (untested here): `docker compose up --build`. PostgreSQL: set `DATABASE_URL=postgresql+psycopg://...` and `pip install "psycopg[binary]"`.
+
+## 🚀 Cloud Deployment
+
+### Option A: Render (Free Web Service)
+1. Fork or push to GitHub (`Altamash346/aicte-sangam`).
+2. Go to [dashboard.render.com](https://dashboard.render.com/) -> **New** -> **Web Service**.
+3. Select your GitHub repository.
+4. Render automatically detects `render.yaml` (or choose Python 3 runtime):
+   - **Build Command**: `pip install -r backend/requirements.txt`
+   - **Start Command**: `cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+5. Add Environment Variable:
+   - `COOKIE_SECURE`: `true`
+6. Click **Deploy Web Service**.
+
+### Option B: Railway / Fly.io / Koyeb
+- Simply import the GitHub repo. Railway / Fly will detect the `Dockerfile` and `railway.json` / `Procfile` and deploy automatically with zero extra configuration.
+
+### Option C: Docker (Local / VPS)
+```bash
+docker compose up --build
+```
+Open `http://localhost:8000`.
+
+---
 
 **Demo logins** (password `Aicte@2026`): `chairman` (Competent Authority) · `rb.head` · `pgrc.head` · `rb.officer1` · `pgrc.officer1` · `arc.head` · `ro.western` (Regional).
 Click **▶ Guided demo** in the top bar for an 8-step walkthrough. Pitch script: `docs/PITCH_AND_DEMO.md`.
